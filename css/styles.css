@@ -1,0 +1,33 @@
+body {
+background-color: #c4c4c4;
+
+}
+
+h1 {
+    text-align: center;
+
+}
+
+i {
+    margin: 0.2em;
+}
+
+input {
+    margin:0.2em;
+}
+
+button {
+    margin:0.2em;
+}
+
+#lista-redes li {
+    display: inline;
+}
+
+#header-back-img {
+    border-radius: 0.5em;
+}
+
+#header-me-img {
+    border-radius: 0.5em;
+}
