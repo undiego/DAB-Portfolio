@@ -1,0 +1,53 @@
+body {
+background-color: #c4c4c4;
+
+}
+
+h1 {
+    text-align: center;
+
+}
+
+i {
+    margin: 0.2em;
+}
+
+input {
+    margin:0.2em;
+
+}
+
+button {
+    margin:0.2em;
+}
+
+#ico-user, #ico-user-chek, #ico-face, #ico-insta {
+    margin-top: 0.75em;
+}
+
+#ico-user-chek{
+    display:none;
+}
+
+#argentina-programa {
+    margin: 0.2em;
+    height: 2.25em;
+}
+
+#texto-argentina-programa{
+    display: inline;
+}
+
+#login {
+    display: flex;
+}
+
+#header-back-img {
+    border-radius: 0.5em;
+    
+}
+
+#header-me-img {
+    border-radius: 0.5em;
+      
+}

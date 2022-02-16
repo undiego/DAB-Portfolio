@@ -14,26 +14,78 @@
     
     <!-- Javascript -->
     <script src="./js/app.js"></script>
-    <title>Diego Andrés Barrio</title>
+    <title>DAB - Portfolio</title>
 </head>
-<body>
+<body class="container-fluid">
     <header>
-
+        <div class="row">
+            <div class="col-3">
+                <img id=argentina-programa src="./img/argentina-programa.jpg" class ="rounded img-fluid" alt="Logo Argentina Programa">
+                <p id="texto-argentina-programa">Argentina Programa</p>
+            </div>
+            <div class="col-9">
+                
+                <form id="login">
+                    <span id="ico-face"><i class="fa-brands fa-facebook-square"></i></span>
+                    <span id="ico-insta"><i class="fa-brands fa-instagram-square"></i></span>    
+                    <input type="text" class="form-control" placeholder="ID" aria-label="User">
+                    <input type="text" class="form-control" placeholder="Pass" aria-label="Pass">
+                    <span id="ico-user"><i class="fa-solid fa-user"></i></span>
+                    <span id="ico-user-chek"><i class="fa-solid fa-user-check"></i></span>
+                    <button type="Login" class="btn btn-primary" disabled>Login</button>
+                </form>
+                
+            </div>
+        </div>
+        
+        <img id="header-back-img" src="./img/header-bariloche.jpg" class ="img-fluid" alt="Bariloche">
+        
+        <img id="header-me-img" src="./img/DAB.jpg" class ="float-end" alt="DAB">
+        
+        <h1>Diego A. Barrio - Portfolio </h1>
+                
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-primary" role="alert">
+                    Texto Alerta!
+                </div>
+            </div>
+        </div>
+        
     </header>
     <nav>
 
     </nav>
 
-    <section>
+    <section id="sec-conocimientos">
+        <div class="iconos-edicion">
+            <i class="fa-solid fa-plus"></i>
+            <i class="fa-solid fa-pen-to-square"></i>
+            <i class="fa-solid fa-trash"></i>
+        </div>
+        <h2>Conocimientos</h2>
+        <p>Texto</p>
 
     </section>
     
-    <section>
-        
+    <section id="sec-estudios">
+        <div class="iconos-edicion">
+            <i class="fa-solid fa-plus"></i>
+            <i class="fa-solid fa-pen-to-square"></i>
+            <i class="fa-solid fa-trash"></i>
+        </div>
+        <h2>Estudios</h2>
+        <p>Texto</p>
     </section>
     
-    <section>
-        
+    <section id="sec-otras-habilidades">
+        <div class="iconos-edicion">
+            <i class="fa-solid fa-plus"></i>
+            <i class="fa-solid fa-pen-to-square"></i>
+            <i class="fa-solid fa-trash"></i>
+        </div>
+        <h2>Otras habilidades</h2>
+        <p>Texto</p>
     </section>
     
     <aside>
@@ -41,10 +93,11 @@
     </aside>
 
     <footer>
-
+        <p>Texto footer</p>
     </footer>
+    
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+    
 </body>
 </html>
