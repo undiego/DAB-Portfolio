@@ -16,7 +16,8 @@
     <script src="./js/app.js"></script>
     <title>DAB - Portfolio</title>
 </head>
-<body class="container-fluid">
+<body>
+    <div class="container-fluid">
     <header>
         <div class="row">
             <div class="col-3">
@@ -42,22 +43,56 @@
         
         <img id="header-me-img" src="./img/DAB.jpg" class ="float-end" alt="DAB">
         
-        <h1>Diego A. Barrio - Portfolio </h1>
-                
         <div class="row">
             <div class="col">
                 <div class="alert alert-primary" role="alert">
-                    Texto Alerta!
+                    <div class="iconos-edicion">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </div>
+                    <p>Texto Alerta!</p>
                 </div>
             </div>
         </div>
-        
+
+        <div class="row">
+            <div class="col">
+                <div class="iconos-edicion">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                </div>
+                <h1>Diego A. Barrio - Portfolio </h1>
+                <div class="iconos-edicion">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                </div>
+                <p id="texto-descripcion">Descripción DAB</p>
+            </div>
+        </div>
     </header>
+    
     <nav>
 
     </nav>
 
-    <section id="sec-conocimientos">
+    <section id="sec-acerca" class="card mat-card">
+        <div class="iconos-edicion">
+            <i class="fa-solid fa-pen-to-square"></i>
+        </div>
+        <h2>Acerca de</h2>
+        <p>Texto</p>
+
+    </section>
+
+    <section id="sec-experiencia" class="card mat-card">
+        <div class="iconos-edicion">
+            <i class="fa-solid fa-plus"></i>
+            <i class="fa-solid fa-pen-to-square"></i>
+            <i class="fa-solid fa-trash"></i>
+        </div>
+        <h2>Experiencia</h2>
+        <p>Texto</p>
+
+    </section>
+
+    <section id="sec-conocimientos" class="card mat-card">
         <div class="iconos-edicion">
             <i class="fa-solid fa-plus"></i>
             <i class="fa-solid fa-pen-to-square"></i>
@@ -68,7 +103,7 @@
 
     </section>
     
-    <section id="sec-estudios">
+    <section id="sec-estudios" class="card mat-card">
         <div class="iconos-edicion">
             <i class="fa-solid fa-plus"></i>
             <i class="fa-solid fa-pen-to-square"></i>
@@ -78,7 +113,7 @@
         <p>Texto</p>
     </section>
     
-    <section id="sec-otras-habilidades">
+    <section id="sec-otras-habilidades" class="card mat-card">
         <div class="iconos-edicion">
             <i class="fa-solid fa-plus"></i>
             <i class="fa-solid fa-pen-to-square"></i>
@@ -88,16 +123,19 @@
         <p>Texto</p>
     </section>
     
-    <aside>
-
-    </aside>
+    <div id="agregar-seccion">
+        <button type="" class="btn btn-primary" disabled>Agregar sección</button>
+    </div>
 
     <footer>
-        <p>Texto footer</p>
+        <div class="iconos-edicion">
+            <i class="fa-solid fa-pen-to-square"></i>
+        </div>
+        <p id="texto-footer">Texto footer</p>
     </footer>
     
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    
+    </div>
 </body>
 </html>
