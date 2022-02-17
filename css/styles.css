@@ -1,16 +1,14 @@
 body {
 background-color: #c4c4c4;
-
 }
 
-section {
+section, footer {
     margin:0.75em;
     padding: 0.5em;
 }
 
 h1 {
     text-align: center;
-
 }
 
 i {
@@ -19,14 +17,13 @@ i {
 
 input {
     margin:0.2em;
-
 }
 
 button {
     margin:0.2em;
 }
 
-#texto-descripcion {
+#texto-descripcion, #texto-footer {
     text-align: center;
 }
 
@@ -54,10 +51,13 @@ button {
 #header-back-img {
     border-radius: 0.5em;
     margin-bottom: 0.5em;
-    
 }
 
 #header-me-img {
     border-radius: 0.5em;
-      
+}
+
+#agregar-seccion {
+    text-align: right;
+    padding: 0.5em;
 }
