@@ -1,8 +1,8 @@
 <header>
     <div class="row">
         <div class="col-3">
-            <img id=argentina-programa src="./assets/images/argentina-programa.jpg" class ="rounded img-fluid" alt="Logo Argentina Programa">
-            <p id="texto-argentina-programa">Argentina Programa</p>
+            <img id=argentina-programa [src]="dataPortfolio.logoArgentinaPrograma" class ="rounded img-fluid" alt="Logo Argentina Programa">
+            <p id="texto-argentina-programa">{{dataPortfolio.textoArgentinaPrograma}}</p>
         </div>
         <div class="col-9">
           <a href="#"id="ico-face"><i class="fa-brands fa-facebook-square"></i></a>
@@ -12,14 +12,14 @@
             <input type="text" class="form-control" placeholder="Pass" aria-label="Pass">
             <span id="ico-user"><i class="fa-solid fa-user"></i></span>
             <span id="ico-user-chek"><i class="fa-solid fa-user-check"></i></span>
-            <button type="Login" class="btn btn-primary" disabled>Ingresar</button>
+            <button type="Login" class="btn btn-primary" disabled>{{dataPortfolio.textLogin}}</button>
           </form>
         </div>
     </div>
     
-    <img id="header-back-img" src="./assets/images/header-bariloche.JPG" class ="img-fluid" alt="Bariloche">
+    <img id="header-back-img" [src]="dataPortfolio.backImage" class ="img-fluid" alt="Bariloche">
     
-    <img id="header-me-img" src="./assets/images/DAB.jpg" class ="float-end" alt="DAB">
+    <img id="header-me-img" [src]="dataPortfolio.photo" class ="float-end" alt="DAB">
     
     <div class="row">
         <div class="col">
@@ -27,7 +27,7 @@
                 <div class="iconos-edicion">  
                     <a href="#"><i class="fa-solid fa-pen-to-square"></i></a>
                 </div>
-                <p>Texto Alerta!</p>
+                <p>{{dataPortfolio.alertText}}</p>
             </div>
         </div>
     </div>
@@ -37,11 +37,12 @@
             <div class="iconos-edicion">
               <a href="#"><i class="fa-solid fa-pen-to-square"></i></a>
             </div>
-            <h1>Diego A. Barrio - Portfolio </h1>
+            <h1> {{dataPortfolio.name}} </h1>
             <div class="iconos-edicion">
               <a href="#"><i class="fa-solid fa-pen-to-square"></i></a>
             </div>
-            <p id="texto-descripcion">Descripción DAB</p>
+            <p id="texto-descripcion">{{dataPortfolio.position}}</p>
+            <p id="texto-ubicacion">{{dataPortfolio.location}}</p>
         </div>
     </div>
 </header>

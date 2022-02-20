@@ -7,7 +7,7 @@
 	"photo": "./assets/images/DAB.jpg",
 	"position": "Descripción DAB",
     "location":"Buenos Aires - Argentina",
-	"alert-text": "Lorem ipsum dolor sit amet, consectetur adipiscing",
+	"alertText": "Lorem ipsum dolor sit amet, consectetur adipiscing",
 	"about": {
 		"title": "Acerca de",
 		"text": "Texto"
