@@ -12,6 +12,7 @@ import { EducationComponent } from './components/education/education.component';
 import { OtherSkillsComponent } from './components/other-skills/other-skills.component';
 import { AddSectionComponent } from './components/add-section/add-section.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { DoneComponent } from './components/done/done.component';
 
 //import { DatosPortfolioService } from './services/datos-portfolio.service';
 
@@ -25,7 +26,8 @@ import { FooterComponent } from './components/footer/footer.component';
     EducationComponent,
     OtherSkillsComponent,
     AddSectionComponent,
-    FooterComponent
+    FooterComponent,
+    DoneComponent
   ],
   imports: [
     BrowserModule,

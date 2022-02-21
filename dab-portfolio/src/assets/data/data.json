@@ -12,6 +12,11 @@
 		"title": "Acerca de",
 		"text": "Texto"
 	},
+	"done":{
+		"title": "Hecho",
+		"text": "Texto",
+		"url": "url"
+	},
 	"workExperience": {
 		"title": "Experiencia laboral",
 		"text": "Texto"
