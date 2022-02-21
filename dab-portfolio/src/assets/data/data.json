@@ -6,7 +6,7 @@
 	"backImage": "./assets/images/header-bariloche.JPG",
 	"photo": "./assets/images/DAB.jpg",
 	"position": "Descripción DAB",
-    "location":"Buenos Aires - Argentina",
+    "location": "Buenos Aires - Argentina",
 	"alertText": "Lorem ipsum dolor sit amet, consectetur adipiscing",
 	"about": {
 		"title": "Acerca de",
