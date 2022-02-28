@@ -23,6 +23,18 @@ button {
     margin:0.2em;
 }
 
+.container {
+    display:flex;
+    justify-content: space-between;
+    border-radius: 0.5em;
+    
+}
+.item {
+    border-radius: 0.5em;
+    margin: auto;
+    display: inline-flex;
+}
+
 #texto-descripcion, #texto-footer {
     text-align: center;
 }

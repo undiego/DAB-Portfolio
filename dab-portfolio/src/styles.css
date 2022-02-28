@@ -23,6 +23,10 @@ body {
     button {
         margin:0.2em;
     }
+
+    .container {
+        display: flex;
+    }
     
     .iconos-edicion {
         text-align: right;    
