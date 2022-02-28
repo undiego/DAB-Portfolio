@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { DatosPortfolioService } from 'src/app/services/datos-portfolio.service';
 
 @Component({
-  selector: 'app-add-section',
-  templateUrl: './add-section.component.html',
-  styleUrls: ['./add-section.component.css']
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.css']
 })
-export class AddSectionComponent implements OnInit {
+export class LoginComponent implements OnInit {
 
   dataPortfolio:any;
 
