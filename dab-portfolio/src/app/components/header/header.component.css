@@ -1,0 +1,10 @@
+#header-back-img {
+    z-index: 0;
+}
+
+#header-me-img {
+    position:relative;
+    margin-top: -6.4em;
+    z-index: 1;
+    border-top-right-radius: 0;
+}
