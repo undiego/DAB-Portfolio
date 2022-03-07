@@ -1,0 +1,60 @@
+{
+	"data":[
+	{
+		"logoArgentinaPrograma": "./assets/images/argentina-programa.jpg",
+		"textoArgentinaPrograma": "Argentina Programa",
+		"textLogin": "Ingresar"
+	},
+	{
+		"name": "Diego Barrio",
+		"backImage": "./assets/images/header-bariloche.JPG",
+		"photo": "./assets/images/DAB.jpg",
+		"position": "Descripción DAB",
+    	"location": "Buenos Aires - Argentina",
+		"alertText": "Lorem ipsum dolor sit amet, consectetur adipiscing"
+	},
+	{
+		"about": {
+		"title": "Acerca de",
+		"text": "Texto"
+		}
+	},
+	{
+		"done": {
+		"title": "Hecho",
+		"text": "Texto",
+		"url": "url"
+		}
+	},
+	{
+		"computerSkills": {
+		"title": "Conocimientos informáticos",
+		"text": "Texto"
+		}
+	},
+	{
+		"workExperience": {
+		"title": "Experiencia laboral",
+		"text": "Texto"
+		}
+	},
+	{	
+		"education": {
+		"title": "Educación",
+		"text": "Texto"
+		}
+	},
+	{
+		"otherSkills": {
+		"title": "Otras habilidades",
+		"text": "Texto"
+		}
+	},
+	{
+		"textBtnAddSection": "Agregar sección"
+	},
+	{	"textFooter": "Texto footer"
+	}	
+]
+
+}
