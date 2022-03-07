@@ -1,8 +1,8 @@
 <header>
  
-    <img id="header-back-img" [src]="dataPortfolio.backImage" class ="img-fluid" alt="Bariloche">
+    <img id="header-back-img" [src]="dataPortfolio[1].backImage" class ="img-fluid" alt="Bariloche">
     
-    <img id="header-me-img" [src]="dataPortfolio.photo" class ="float-end" alt="DAB">
+    <img id="header-me-img" [src]="dataPortfolio[1].photo" class ="float-end" alt="DAB">
     
     <div class="row">
         <div class="col">
@@ -10,7 +10,7 @@
                 <div class="iconos-edicion">  
                     <a href="#"><i class="fa-solid fa-pen-to-square"></i></a>
                 </div>
-                <p>{{dataPortfolio.alertText}}</p>
+                <p>{{dataPortfolio[1].alertText}}</p>
             </div>
         </div>
     </div>
@@ -20,12 +20,12 @@
             <div class="iconos-edicion">
               <a href="#"><i class="fa-solid fa-pen-to-square"></i></a>
             </div>
-            <h1> {{dataPortfolio.name}} </h1>
+            <h1> {{dataPortfolio[1].name}} </h1>
             <div class="iconos-edicion">
               <a href="#"><i class="fa-solid fa-pen-to-square"></i></a>
             </div>
-            <p id="texto-descripcion">{{dataPortfolio.position}}</p>
-            <p id="texto-ubicacion">{{dataPortfolio.location}}</p>
+            <p id="texto-descripcion">{{dataPortfolio[1].position}}</p>
+            <p id="texto-ubicacion">{{dataPortfolio[1].location}}</p>
         </div>
     </div>
 </header>

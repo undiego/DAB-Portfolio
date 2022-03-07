@@ -27,14 +27,14 @@
 		}
 	},
 	{
-		"workExperience": {
-		"title": "Experiencia laboral",
+		"computerSkills": {
+		"title": "Conocimientos informáticos",
 		"text": "Texto"
 		}
 	},
 	{
-		"computerSkills": {
-		"title": "Conocimientos informáticos",
+		"workExperience": {
+		"title": "Experiencia laboral",
 		"text": "Texto"
 		}
 	},
