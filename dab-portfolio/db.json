@@ -1,11 +1,13 @@
 {
 	"data":[
 	{
+		"idSection": "login",
 		"logoArgentinaPrograma": "./assets/images/argentina-programa.jpg",
 		"textoArgentinaPrograma": "Argentina Programa",
 		"textLogin": "Ingresar"
 	},
 	{
+		"idSection":"header",
 		"name": "Diego Barrio",
 		"backImage": "./assets/images/header-bariloche.JPG",
 		"photo": "./assets/images/DAB.jpg",
@@ -15,12 +17,14 @@
 	},
 	{
 		"about": {
+		"idSection":"sec-acerca",
 		"title": "Acerca de",
 		"text": "Texto"
 		}
 	},
 	{
 		"done": {
+		"idSection":"sec-hecho",
 		"title": "Hecho",
 		"text": "Texto",
 		"url": "url"
@@ -28,33 +32,39 @@
 	},
 	{
 		"computerSkills": {
+		"idSection":"sec-conocimientos",
 		"title": "Conocimientos informáticos",
 		"text": "Texto"
 		}
 	},
 	{
 		"workExperience": {
+		"idSection":"sec-experiencia",
 		"title": "Experiencia laboral",
 		"text": "Texto"
 		}
 	},
 	{	
 		"education": {
+		"idSection":"sec-educacion",
 		"title": "Educación",
 		"text": "Texto"
 		}
 	},
 	{
 		"otherSkills": {
+		"idSection":"sec-otras-habilidades",
 		"title": "Otras habilidades",
 		"text": "Texto"
 		}
 	},
 	{
+		"idSection":"agregar-seccion",
 		"textBtnAddSection": "Agregar sección"
 	},
-	{	"textFooter": "Texto footer"
+	{	
+		"idSection":"texto-footer",
+		"textFooter": "Texto footer"
 	}	
 ]
-
 }

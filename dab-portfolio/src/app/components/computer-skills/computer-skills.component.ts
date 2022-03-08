@@ -9,6 +9,7 @@ import { DatosPortfolioService } from 'src/app/services/datos-portfolio.service'
 export class ComputerSkillsComponent implements OnInit {
 
   dataPortfolio:any;
+  idSection:string = "sec-conocimientos";
 
   constructor(private datosPortfolioService: DatosPortfolioService) { }
 
@@ -16,4 +17,9 @@ export class ComputerSkillsComponent implements OnInit {
     this.datosPortfolioService.getDatos().subscribe(data => {this.dataPortfolio = data});
   }
 
+  /*Se agrega función para que funcione databinding de computer skills component*/
+  onDelete(idSection:string){
+    console.log(idSection);
+    this.datosPortfolioService.deleteSection(idSection);
+  }
 }

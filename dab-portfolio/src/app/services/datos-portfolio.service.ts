@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 export class DatosPortfolioService {
 
   private apiUrl = 'http://localhost:5000/data';
-
+  
   constructor(private http:HttpClient) { }
 
   getDatos():Observable<any>{
@@ -18,5 +18,9 @@ export class DatosPortfolioService {
     //return this.http.get('./assets/data/data.json');
     return this.http.get<any>(this.apiUrl);
   }
-
+  /*Se agrega función para que funcione databinding de done component*/
+  deleteSection(idSection:string): Observable<any>{
+    console.log("delete desde servicio " + idSection);
+    return this.http.delete(idSection);
+  }
 }
