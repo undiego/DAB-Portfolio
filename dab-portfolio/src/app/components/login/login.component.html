@@ -4,14 +4,19 @@
         <p id="texto-argentina-programa">{{dataPortfolio[0].textoArgentinaPrograma}}</p>
     </div>
     <div class="col-9">
+      
       <a href="#"id="ico-face"><i class="fa-brands fa-facebook-square"></i></a>
       <a href="#"id="ico-insta"><i class="fa-brands fa-instagram-square"></i></a>
+      
+      
       <form id="login">
-        <input type="text" class="form-control" placeholder="ID" aria-label="User">
-        <input type="text" class="form-control" placeholder="Pass" aria-label="Pass">
+        <input [(ngModel)]="user" name="usuario" type="text" class="form-control" placeholder="User" aria-label="User">
+        <input [(ngModel)]="pass" name="clave" type="password" class="form-control" placeholder="Pass" aria-label="Pass">
         <span id="ico-user"><i class="fa-solid fa-user"></i></span>
         <span id="ico-user-chek"><i class="fa-solid fa-user-check"></i></span>
-        <button type="Login" class="btn btn-primary" disabled>{{dataPortfolio[0].textLogin}}</button>
+        <button type="submit" method="post" class="btn btn-primary" (click)="onSubmit(user, pass)">{{dataPortfolio[0].textLogin}}</button>
       </form>
+      
+    
     </div>
 </div>
