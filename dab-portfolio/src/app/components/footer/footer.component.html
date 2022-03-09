@@ -1,6 +1,6 @@
 <footer>
     <div class="iconos-edicion">
-        <a href="#"><i class="fa-solid fa-pen-to-square"></i></a>
+        <a href="#"><i class="fa-solid fa-pen-to-square" (click)="onEdit(idTextoFooter)"></i></a>
     </div>
-    <p id="texto-footer">{{dataPortfolio[9].textFooter}}</p>
+    <p [id]="idTextoFooter">{{dataPortfolio[9].textFooter}}</p>
 </footer>

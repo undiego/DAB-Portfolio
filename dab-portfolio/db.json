@@ -17,7 +17,7 @@
 	},
 	{
 		"about": {
-		"idSection":"sec-acerca",
+		"idSection":"about",
 		"title": "Acerca de",
 		"text": "Texto"
 		}

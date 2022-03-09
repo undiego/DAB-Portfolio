@@ -1,6 +1,6 @@
-<section id="sec-acerca" class="card mat-card">
+<section [id]="idSection" class="card mat-card">
     <div class="iconos-edicion">
-      <a href="#"><i class="fa-solid fa-pen-to-square"></i></a>
+      <a href="#"><i class="fa-solid fa-pen-to-square" (click)="onEdit(idSection)"></i></a>
     </div>
     <h2>{{dataPortfolio[2].about.title}}</h2>
     <p>{{dataPortfolio[2].about.text}}</p>

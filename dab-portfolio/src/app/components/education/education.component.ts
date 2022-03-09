@@ -9,11 +9,16 @@ import { DatosPortfolioService } from 'src/app/services/datos-portfolio.service'
 export class EducationComponent implements OnInit {
 
   dataPortfolio:any;
+  idSection:string ="sec-educacion"
 
   constructor(private datosPortfolioService: DatosPortfolioService) { }
 
   ngOnInit(): void {
     this.datosPortfolioService.getDatos().subscribe(data => {this.dataPortfolio = data});
   }
-
+  /*Se agrega función para que funcione databinding de education component*/
+  onDelete(idSection:string){
+    console.log(idSection);
+    this.datosPortfolioService.deleteSection(idSection);
+  }
 }

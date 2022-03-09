@@ -9,11 +9,15 @@ import { DatosPortfolioService } from 'src/app/services/datos-portfolio.service'
 export class AboutComponent implements OnInit {
 
   dataPortfolio:any;
+  idSection:string = "about";
 
   constructor(private datosPortfolioService: DatosPortfolioService) { }
 
   ngOnInit(): void {
     this.datosPortfolioService.getDatos().subscribe(data => {this.dataPortfolio = data});
   }
-
+  onEdit(idSection:string){
+    console.log("about component");
+    this.datosPortfolioService.editSection(idSection);
+  }
 }

@@ -18,9 +18,14 @@ export class DatosPortfolioService {
     //return this.http.get('./assets/data/data.json');
     return this.http.get<any>(this.apiUrl);
   }
-  /*Se agrega función para que funcione databinding de done component*/
+  /*Se agrega función para que funcione databinding de los componentes*/
   deleteSection(idSection:string): Observable<any>{
     console.log("delete desde servicio " + idSection);
-    return this.http.delete(idSection);
+    alert("¿Está seguro de borrar esta sección?");
+    return this.http.delete<any>(idSection);
+  }
+  editSection(idSection:string): Observable<any>{
+    console.log("Edit desde el servicio " + idSection);
+    return this.http.patch(idSection, "");
   }
 }

@@ -7,9 +7,9 @@
         <div class="col">
             <div class="alert alert-primary" role="alert">
                 <div class="iconos-edicion">  
-                    <a href="#"><i class="fa-solid fa-pen-to-square"></i></a>
+                    <a href="#"><i class="fa-solid fa-pen-to-square" (click)="onEdit(alertText)"></i></a>
                 </div>
-                <p>{{dataPortfolio[1].alertText}}</p>
+                <p [id]="alertText">{{dataPortfolio[1].alertText}}</p>
             </div>
         </div>
     </div>
@@ -17,14 +17,17 @@
     <div class="row">
         <div class="col">
             <div class="iconos-edicion">
-              <a href="#"><i class="fa-solid fa-pen-to-square"></i></a>
+              <a href="#"><i class="fa-solid fa-pen-to-square" (click)="onEdit(idTitulo)"></i></a>
             </div>
-            <h1> {{dataPortfolio[1].name}} </h1>
+            <h1 [id]="idTitulo"> {{dataPortfolio[1].name}} </h1>
             <div class="iconos-edicion">
-              <a href="#"><i class="fa-solid fa-pen-to-square"></i></a>
+              <a href="#"><i class="fa-solid fa-pen-to-square" (click)="onEdit(textoDescripcion)"></i></a>
             </div>
-            <p id="texto-descripcion">{{dataPortfolio[1].position}}</p>
-            <p id="texto-ubicacion">{{dataPortfolio[1].location}}</p>
+            <p [id]="textoDescripcion">{{dataPortfolio[1].position}}</p>
+            <div class="iconos-edicion">
+                <a href="#"><i class="fa-solid fa-pen-to-square" (click)="onEdit(textoUbicacion)"></i></a>
+            </div>
+            <p [id]="textoUbicacion">{{dataPortfolio[1].location}}</p>
         </div>
     </div>
 </header>
