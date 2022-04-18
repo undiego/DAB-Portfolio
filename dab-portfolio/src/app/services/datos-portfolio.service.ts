@@ -21,7 +21,7 @@ export class DatosPortfolioService {
   /*Se agrega función para que funcione databinding de los componentes*/
   deleteSection(idSection:string): Observable<any>{
     console.log("delete desde servicio " + idSection);
-    alert("¿Desea borrar esta sección?");
+    confirm("¿Desea borrar esta sección?");
     return this.http.delete<any>(idSection);
   }
   editSection(idSection:string): Observable<any>{
