@@ -25,9 +25,8 @@
 	{
 		"done": {
 		"idSection":"sec-hecho",
-		"title": "Hecho",
-		"idItem":"",
-		"item":"Título 1",
+		"title_sec": "Hecho",
+		"title": "Título",
 		"text": "Texto",
 		"url": "url"
 		}
@@ -36,38 +35,31 @@
 		"computerSkills": {
 		"idSection":"sec-conocimientos",
 		"title": "Conocimientos informáticos",
-		"idItem":"",
-		"item":"Título 1",
-		"text": "Texto",
-		"url": "url"
+		"item": "Ítem"
 		}
 	},
 	{
 		"workExperience": {
 		"idSection":"sec-experiencia",
 		"title": "Experiencia laboral",
-		"idItem":"",
-		"item":"Título 1",
-		"text": "Texto",
-		"url": "url"
+		"institucion":"Institución",
+		"area": "Área",
+		"duracion": "duración"
 		}
 	},
 	{	
 		"education": {
 		"idSection":"sec-educacion",
 		"title": "Educación",
-		"idItem":"",
-		"item":"Título 1",
-		"text": "Texto",
-		"url": "url"
+		"titulo": "Título",
+		"institucion": "Institución",
+		"completo": "boolean"
 		}
 	},
 	{
 		"otherSkills": {
 		"idSection":"sec-otras-habilidades",
 		"title": "Otras habilidades",
-		"idItem":"",
-		"item":"Título 1",
 		"text": "Texto",
 		"url": "url"
 		}
