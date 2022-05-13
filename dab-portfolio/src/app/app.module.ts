@@ -16,6 +16,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { DoneComponent } from './components/done/done.component';
 import { LoginComponent } from './components/login/login.component';
 
+
 //import { DatosPortfolioService } from './services/datos-portfolio.service';
 
 @NgModule({
@@ -30,7 +31,7 @@ import { LoginComponent } from './components/login/login.component';
     AddSectionComponent,
     FooterComponent,
     DoneComponent,
-    LoginComponent
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
