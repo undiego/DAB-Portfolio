@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 export class DatosPortfolioService {
 
   private apiUrl = 'http://localhost:5000/data';
-  
+
   constructor(private http:HttpClient) { }
 
   getDatos():Observable<any>{

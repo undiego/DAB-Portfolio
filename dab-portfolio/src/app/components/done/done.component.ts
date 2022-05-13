@@ -10,6 +10,7 @@ export class DoneComponent implements OnInit {
   
   dataPortfolio:any;
   idSection:string = "sec-hecho";
+  //doneList:any[] =[];
     
   constructor(private datosPortfolioService: DatosPortfolioService) { }
 
