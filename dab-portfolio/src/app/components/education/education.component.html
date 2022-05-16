@@ -8,7 +8,9 @@
     <li *ngFor="let educ of educList">
       <div>
         <h4>{{educ.titulo}}</h4>
-        <p>{{educ.institucion}} - {{educ.completo}}</p>
+        <p *ngIf="educ.completo; then completo else no_completo"></p>
+        <ng-template #completo><p>{{educ.institucion}} - Completo</p></ng-template>
+        <ng-template #no_completo><p>{{educ.institucion}} - Incompleto</p></ng-template>
       </div>
       <div class="iconos-edicion">
         <span><a href="#"><i class="fa-solid fa-pen-to-square"></i></a></span>

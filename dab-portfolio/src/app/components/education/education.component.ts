@@ -11,6 +11,8 @@ export class EducationComponent implements OnInit {
   dataPortfolio:any;
   idSection:string ="sec-educacion"
   educList:any;
+  completo:any;
+  no_completo:any;
 
   constructor(private datosPortfolioService: DatosPortfolioService) { }
 
