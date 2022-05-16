@@ -24,4 +24,14 @@ export class DoneComponent implements OnInit {
     console.log(idSection);
     this.datosPortfolioService.deleteSection(idSection);
   }
+
+  onEdit(text:string){
+    console.log("Edit: " + text);
+    this.datosPortfolioService.editItem(text);
+  }
+
+  onAdd(idSection:string){
+    console.log("Add ítem en: " + idSection);
+    this.datosPortfolioService.addItem(idSection);
+  }
 }

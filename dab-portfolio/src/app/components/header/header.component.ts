@@ -25,6 +25,6 @@ export class HeaderComponent implements OnInit {
   }
     onEdit(text:string){
       console.log("Edit header " + text);
-      this.datosPortfolioService.editSection(text);
+      this.datosPortfolioService.editItem(text);
     }
   }

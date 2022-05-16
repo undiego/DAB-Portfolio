@@ -1,6 +1,6 @@
 <section [id]="idSection" class="card mat-card">
     <div class="iconos-edicion">
-      <a href="#"><i class="fa-solid fa-plus"></i></a>
+      <a href="#"><i class="fa-solid fa-plus" (click)="onAdd(idSection)"></i></a>
       <a href="#"><i class="fa-solid fa-trash" (click)="onDelete(idSection)"></i></a>
     </div>
     <h2>{{dataPortfolio[3].done.title}}</h2>

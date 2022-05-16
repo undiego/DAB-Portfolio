@@ -28,4 +28,14 @@ export class DatosPortfolioService {
     console.log("Edit desde el servicio " + idSection);
     return this.http.patch(idSection, "");
   }
+
+  editItem(idItem:string): Observable<any>{
+    console.log("Edit desde el servicio " + idItem);
+    return this.http.patch(idItem, "");
+  }
+
+  addItem(idSection:string): Observable<any>{
+    console.log("Add desde el servicio " + idSection);
+    return this.http.post(idSection, "");
+  }
 }

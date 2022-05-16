@@ -23,4 +23,9 @@ export class WorkExperienceComponent implements OnInit {
     console.log(idSection);
     this.datosPortfolioService.deleteSection(idSection);
   }
+
+  onAdd(idSection:string){
+    console.log("Add ítem en: " + idSection);
+    this.datosPortfolioService.addItem(idSection);
+  }
 }
