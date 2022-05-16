@@ -10,11 +10,13 @@ export class EducationComponent implements OnInit {
 
   dataPortfolio:any;
   idSection:string ="sec-educacion"
+  educList:any;
 
   constructor(private datosPortfolioService: DatosPortfolioService) { }
 
   ngOnInit(): void {
     this.datosPortfolioService.getDatos().subscribe(data => {this.dataPortfolio = data});
+    this.datosPortfolioService.getDatos().subscribe(data => {this.educList = data[6].education.items});
   }
   /*Se agrega función para que funcione databinding de education component*/
   onDelete(idSection:string){

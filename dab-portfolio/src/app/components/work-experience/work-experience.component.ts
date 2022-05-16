@@ -10,11 +10,13 @@ export class WorkExperienceComponent implements OnInit {
 
   dataPortfolio:any;
   idSection:string = "sec-experiencia";
+  workExpList:any;
 
   constructor(private datosPortfolioService: DatosPortfolioService) { }
 
   ngOnInit(): void {
     this.datosPortfolioService.getDatos().subscribe(data => {this.dataPortfolio = data});
+    this.datosPortfolioService.getDatos().subscribe(data => {this.workExpList = data[5].workExperience.items});
   }
   /*Se agrega función para que funcione databinding de work experience component*/
   onDelete(idSection:string){

@@ -3,10 +3,17 @@
       <a href="#"><i class="fa-solid fa-plus"></i></a>
       <a href="#"><i class="fa-solid fa-trash" (click)="onDelete(idSection)"></i></a>
     </div>
-    <h2>{{dataPortfolio[3].done.title_sec}}</h2>
-    <div>
-      <h4>{{dataPortfolio[3].done.title}}</h4>
-      <p>{{dataPortfolio[3].done.text}}</p>
-      <p>{{dataPortfolio[3].done.url}}</p>
-    </div>
+    <h2>{{dataPortfolio[3].done.title}}</h2>
+    <ul>
+      <li *ngFor="let done of doneList" >
+        <div>
+          <h4>{{done.titulo}}</h4>
+          <p>{{done.url}}</p>
+        </div>
+        <div class="iconos-edicion">
+          <span><a href="#"><i class="fa-solid fa-pen-to-square"></i></a></span>
+          <span><a href="#"><i class="fa-solid fa-trash"></i></a></span>
+      </div>
+      </li>
+    </ul>
   </section>

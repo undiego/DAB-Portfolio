@@ -10,12 +10,13 @@ export class DoneComponent implements OnInit {
   
   dataPortfolio:any;
   idSection:string = "sec-hecho";
-  //doneList:any[] =[];
+  doneList:any;
     
   constructor(private datosPortfolioService: DatosPortfolioService) { }
 
   ngOnInit(): void {
     this.datosPortfolioService.getDatos().subscribe(data => {this.dataPortfolio = data});
+    this.datosPortfolioService.getDatos().subscribe(data => {this.doneList = data[3].done.items});
   }
   
   /*Se agrega función para que funcione databinding de done component*/

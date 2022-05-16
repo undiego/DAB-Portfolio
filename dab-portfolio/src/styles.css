@@ -29,7 +29,8 @@ body {
     }
     
     .iconos-edicion {
-        text-align: right;    
+        text-align: right;
+         
     }
 
     #texto-descripcion, #texto-ubicacion, #texto-footer {

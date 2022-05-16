@@ -1,10 +1,18 @@
 <section [id]="idSection" class="card mat-card">
     <div class="iconos-edicion">
       <a href="#"><i class="fa-solid fa-plus"></i></a>
-      <a href="#"><i class="fa-solid fa-pen-to-square"></i></a>
       <a href="#"><i class="fa-solid fa-trash" (click)="onDelete(idSection)"></i></a>
     </div>
     <h2>{{dataPortfolio[4].computerSkills.title}}</h2>
-    <p>{{dataPortfolio[4].computerSkills.item}}</p>
-
+    <ul class="item-list">
+      <li *ngFor="let compSkill of compSkillsList">
+        <div>
+          <p>{{compSkill}}</p>
+        </div>
+        <div class="iconos-edicion">
+          <span><a href="#"><i class="fa-solid fa-pen-to-square"></i></a></span>
+          <span><a href="#"><i class="fa-solid fa-trash"></i></a></span>
+        </div>
+      </li>
+    </ul>
   </section>

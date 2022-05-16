@@ -1,12 +1,21 @@
 <section [id]="idSection" class="card mat-card">
     <div class="iconos-edicion">
         <a href="#"><i class="fa-solid fa-plus"></i></a>
-        <a href="#"><i class="fa-solid fa-pen-to-square"></i></a>
         <a href="#"><i class="fa-solid fa-trash" (click)="onDelete(idSection)"></i></a>
     </div>
     <h2>{{dataPortfolio[5].workExperience.title}}</h2>
-    <h4>{{dataPortfolio[5].workExperience.institucion}}</h4>
-    <p>{{dataPortfolio[5].workExperience.area}}</p>
-    <p>{{dataPortfolio[5].workExperience.duracion}}</p>
+    <ul>
+        <li *ngFor="let workExp of workExpList">
+            <div>
+                <h4>{{workExp.institucion}}</h4>
+                <p>{{workExp.area}} - {{workExp.duracion}}</p>
+            </div>
+            <div class="iconos-edicion">
+                <span><a href="#"><i class="fa-solid fa-pen-to-square"></i></a></span>
+                <span><a href="#"><i class="fa-solid fa-trash"></i></a></span>
+            </div>
+        </li>
+    </ul>
+    
 
 </section>

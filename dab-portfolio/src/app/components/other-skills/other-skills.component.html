@@ -1,10 +1,19 @@
 <section [id]="idSection" class="card mat-card">
     <div class="iconos-edicion">
       <a href="#"><i class="fa-solid fa-plus"></i></a>
-      <a href="#"><i class="fa-solid fa-pen-to-square"></i></a>
       <a href="#"><i class="fa-solid fa-trash" (click)="onDelete(idSection)"></i></a>
     </div>
     <h2>{{dataPortfolio[7].otherSkills.title}}</h2>
-    <h4>{{dataPortfolio[7].otherSkills.text}}</h4>
-    <p>{{dataPortfolio[7].otherSkills.url}}</p>
+    <ul>
+      <li *ngFor="let ohtSk of othSkList">
+        <div class="other-skills">
+          <h4>{{ohtSk.text}}</h4>
+          <p>{{ohtSk.url}}</p>
+        </div>
+        <div class="iconos-edicion">
+          <span><a href="#"><i class="fa-solid fa-pen-to-square"></i></a></span>
+          <span><a href="#"><i class="fa-solid fa-trash"></i></a></span>
+        </div>
+      </li>
+    </ul>
   </section>
