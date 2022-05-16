@@ -18,6 +18,10 @@ export class WorkExperienceComponent implements OnInit {
     this.datosPortfolioService.getDatos().subscribe(data => {this.dataPortfolio = data});
     this.datosPortfolioService.getDatos().subscribe(data => {this.workExpList = data[5].workExperience.items});
   }
+
+  private reloadData() {
+    this.datosPortfolioService.getDatos().subscribe(data => {this.workExpList = data[5].done.items});
+  }
   /*Se agrega función para que funcione databinding de work experience component*/
   onDelete(idSection:string){
     console.log(idSection);

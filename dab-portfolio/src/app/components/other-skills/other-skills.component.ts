@@ -18,6 +18,10 @@ export class OtherSkillsComponent implements OnInit {
     this.datosPortfolioService.getDatos().subscribe(data => {this.dataPortfolio = data});
     this.datosPortfolioService.getDatos().subscribe(data => {this.othSkList = data[7].otherSkills.items});
   }
+
+  private reloadData() {
+    this.datosPortfolioService.getDatos().subscribe(data => {this.othSkList = data[7].done.items});
+  }
   /*Se agrega función para que funcione databinding de other skills component*/
   onDelete(idSection:string){
     console.log(idSection);

@@ -17,7 +17,10 @@ export class ComputerSkillsComponent implements OnInit {
   ngOnInit(): void {
     this.datosPortfolioService.getDatos().subscribe(data => {this.dataPortfolio = data});
     this.datosPortfolioService.getDatos().subscribe(data => {this.compSkillsList = data[4].computerSkills.items});
-    
+  }
+
+  private reloadData() {
+    this.datosPortfolioService.getDatos().subscribe(data => {this.compSkillsList = data[4].done.items});
   }
   
   /*Se agrega función para que funcione databinding de computer skills component*/

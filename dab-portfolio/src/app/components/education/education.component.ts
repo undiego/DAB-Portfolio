@@ -20,6 +20,10 @@ export class EducationComponent implements OnInit {
     this.datosPortfolioService.getDatos().subscribe(data => {this.dataPortfolio = data});
     this.datosPortfolioService.getDatos().subscribe(data => {this.educList = data[6].education.items});
   }
+
+  private reloadData() {
+    this.datosPortfolioService.getDatos().subscribe(data => {this.educList = data[6].done.items});
+  }
   /*Se agrega función para que funcione databinding de education component*/
   onDelete(idSection:string){
     console.log(idSection);
