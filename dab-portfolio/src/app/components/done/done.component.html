@@ -5,14 +5,14 @@
     </div>
     <h2>{{dataPortfolio[3].done.title}}</h2>
     <ul>
-      <li *ngFor="let done of doneList" >
+      <li *ngFor="let done of doneList; let i = index" >
         <div>
           <h4>{{done.titulo}}</h4>
           <p>{{done.url}}</p>
         </div>
         <div class="iconos-edicion">
-          <span><a href="#"><i class="fa-solid fa-pen-to-square"></i></a></span>
-          <span><a href="#"><i class="fa-solid fa-trash"></i></a></span>
+          <span><a href="#"><i class="fa-solid fa-pen-to-square" (click)="onEdit(i)"></i></a></span>
+          <span><a href="#"><i class="fa-solid fa-trash" (click)="onDeleteItem(i)"></i></a></span>
       </div>
       </li>
     </ul>

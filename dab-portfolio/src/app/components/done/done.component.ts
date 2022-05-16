@@ -18,20 +18,29 @@ export class DoneComponent implements OnInit {
     this.datosPortfolioService.getDatos().subscribe(data => {this.dataPortfolio = data});
     this.datosPortfolioService.getDatos().subscribe(data => {this.doneList = data[3].done.items});
   }
-  
+  private reloadData() {
+    this.datosPortfolioService.getDatos().subscribe(data => {this.doneList = data[3].done.items});
+  }
+
   /*Se agrega función para que funcione databinding de done component*/
   onDelete(idSection:string){
     console.log(idSection);
     this.datosPortfolioService.deleteSection(idSection);
   }
 
-  onEdit(text:string){
-    console.log("Edit: " + text);
-    this.datosPortfolioService.editItem(text);
+  onDeleteItem(id:number){
+    console.log(this.idSection);
+    this.datosPortfolioService.deleteItem(id);
   }
 
   onAdd(idSection:string){
     console.log("Add ítem en: " + idSection);
     this.datosPortfolioService.addItem(idSection);
+  }
+
+  onEdit(index:number){
+    console.log("Edit: " + this.idSection);
+    let done:any = this.doneList[index];
+    this.datosPortfolioService.editItem(done);
   }
 }

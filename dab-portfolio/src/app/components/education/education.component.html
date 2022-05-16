@@ -5,7 +5,7 @@
   </div>
   <h2>{{dataPortfolio[6].education.title}}</h2>
   <ul>
-    <li *ngFor="let educ of educList">
+    <li *ngFor="let educ of educList; let i = index">
       <div>
         <h4>{{educ.titulo}}</h4>
         <p *ngIf="educ.completo; then completo else no_completo"></p>
@@ -13,8 +13,8 @@
         <ng-template #no_completo><p>{{educ.institucion}} - Incompleto</p></ng-template>
       </div>
       <div class="iconos-edicion">
-        <span><a href="#"><i class="fa-solid fa-pen-to-square"></i></a></span>
-        <span><a href="#"><i class="fa-solid fa-trash"></i></a></span>
+        <span><a href="#"><i class="fa-solid fa-pen-to-square" (click)="onEdit(i)"></i></a></span>
+        <span><a href="#"><i class="fa-solid fa-trash" (click)="onDeleteItem(i)"></i></a></span>
       </div>
     </li>
   </ul>

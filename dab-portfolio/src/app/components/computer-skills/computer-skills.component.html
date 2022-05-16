@@ -5,13 +5,13 @@
     </div>
     <h2>{{dataPortfolio[4].computerSkills.title}}</h2>
     <ul class="item-list">
-      <li *ngFor="let compSkill of compSkillsList">
+      <li *ngFor="let compSkill of compSkillsList; let i = index">
         <div>
           <p>{{compSkill}}</p>
         </div>
         <div class="iconos-edicion">
-          <span><a href="#"><i class="fa-solid fa-pen-to-square"></i></a></span>
-          <span><a href="#"><i class="fa-solid fa-trash"></i></a></span>
+          <span><a href="#"><i class="fa-solid fa-pen-to-square" (click)="onEdit(i)"></i></a></span>
+          <span><a href="#"><i class="fa-solid fa-trash" (click)="onDeleteItem(i)"></i></a></span>
         </div>
       </li>
     </ul>

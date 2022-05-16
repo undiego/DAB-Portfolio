@@ -26,8 +26,19 @@ export class EducationComponent implements OnInit {
     this.datosPortfolioService.deleteSection(idSection);
   }
 
+  onDeleteItem(id:number){
+    console.log(this.idSection);
+    this.datosPortfolioService.deleteItem(id);
+  }
+
   onAdd(idSection:string){
     console.log("Add ítem en: " + idSection);
     this.datosPortfolioService.addItem(idSection);
+  }
+
+  onEdit(index:number){
+    console.log("Edit: " + this.idSection);
+    let educ:any = this.educList[index];
+    this.datosPortfolioService.editItem(educ);
   }
 }

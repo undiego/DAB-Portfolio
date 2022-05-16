@@ -26,8 +26,19 @@ export class ComputerSkillsComponent implements OnInit {
     this.datosPortfolioService.deleteSection(idSection);
   }
 
+  onDeleteItem(id:number){
+    console.log(this.idSection);
+    this.datosPortfolioService.deleteItem(id);
+  }
+
   onAdd(idSection:string){
     console.log("Add ítem en: " + idSection);
     this.datosPortfolioService.addItem(idSection);
+  }
+
+  onEdit(index:number){
+    console.log("Edit: " + this.idSection);
+    let compSkill:any = this.compSkillsList[index];
+    this.datosPortfolioService.editItem(compSkill);
   }
 }

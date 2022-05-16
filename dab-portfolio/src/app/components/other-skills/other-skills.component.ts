@@ -24,8 +24,19 @@ export class OtherSkillsComponent implements OnInit {
     this.datosPortfolioService.deleteSection(idSection);
   }
 
+  onDeleteItem(id:number){
+    console.log(this.idSection);
+    this.datosPortfolioService.deleteItem(id);
+  }
+
   onAdd(idSection:string){
     console.log("Add ítem en: " + idSection);
     this.datosPortfolioService.addItem(idSection);
+  }
+
+  onEdit(index:number){
+    console.log("Edit: " + this.idSection);
+    let oSk:any = this.othSkList[index];
+    this.datosPortfolioService.editItem(oSk);
   }
 }

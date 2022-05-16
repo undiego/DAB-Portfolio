@@ -29,6 +29,12 @@ export class DatosPortfolioService {
     return this.http.patch(idSection, "");
   }
 
+  deleteItem(id:number): Observable<any>{
+    console.log("Delete desde servicio ");
+    confirm("¿Desea borrar este Ítem?");
+    return this.http.delete(""+id);
+  }
+
   editItem(idItem:string): Observable<any>{
     console.log("Edit desde el servicio " + idItem);
     return this.http.patch(idItem, "");
