@@ -50,6 +50,16 @@ export class DatosPortfolioService {
     console.log("Edit desde el servicio " + idSection);
     return this.http.patch(idSection, "");
   }
+
+  //Componente Acerca de, Footer y Header
+  getDatosVs():Observable<any>{
+    return this.http.get<any>(config.baseUrl + "varios/mostrar");
+  }
+
+  editItemVs(about:any): Observable<any>{
+    return this.http.put<any>(config.baseUrl + "varios/editar/" + about.id, about);
+  }
+
   // Componente Hecho
   getDatosDone():Observable<any>{
     return this.http.get<any>(config.baseUrl + "items/mostrar");
@@ -133,6 +143,8 @@ export class DatosPortfolioService {
   deleteItemOH(id:number): Observable<any>{
     return this.http.delete(config.baseUrl + "otrashabilidades/borrar/" + id);
   }
-  
-  //Componente footer
+
+  //Componente HeaderComponent
+
+
 }
