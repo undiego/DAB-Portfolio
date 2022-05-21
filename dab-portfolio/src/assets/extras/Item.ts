@@ -1,6 +1,6 @@
 export interface Item {
     id:number;
-    text:string;
     title:string;
+    text:string;
     url:string;
 }
