@@ -1,33 +1,89 @@
 <header>
-    <img id="header-back-img" [src]="dataPortfolio[1].backImage" class ="img-fluid" alt="Bariloche">
     
-    <img id="header-me-img" [src]="dataPortfolio[1].photo" class ="float-end" alt="DAB">
-    
-    <div class="row">
-        <div class="col">
-            <div class="alert alert-primary" role="alert">
-                <div class="iconos-edicion">  
-                    <a href="#"><i class="fa-solid fa-pen-to-square" (click)="onEdit(alertText)"></i></a>
+    <section [id]="idSection" class="card mat-card">
+        <!-- Modal -->
+        <div class="modal fade" id="headerForm" tabindex="-1" aria-labelledby="headerFormLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="headerFormLabel">HEADER INFO</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form [formGroup]="headerForm" (ngSubmit)="onSubmit()">
+                  <input type="hidden" name="id" formControlName="id">
+      
+                  <div class="row mb-3">
+                    <label for="text" class="col-sm-2 col-form-label">text</label>
+                    <div class="col-sm-10">
+                      <input type="text" name="text" formControlName="text" class="form-control" required>
+                    </div>
+                  </div>
+                        
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                    <button type="button" class="btn btn-secondary me-4" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Info componente-->
+        <div class="card-titles">
+            
+            <div class="data-container">
+                <!--
+                <div class="logo-image-container">
+                    <img id="header-back-img" [src]="dataPortfolio[1].backImage" class ="img-fluid" alt="Bariloche">
+                    <img id="header-me-img" [src]="dataPortfolio[1].photo" class ="float-end" alt="DAB">
                 </div>
-                <p [id]="alertText">{{dataPortfolio[1].alertText}}</p>
-            </div>
-        </div>
-    </div>
+                -->
+                <div class="logo-image-container">
+                    <img id="header-back-img" src="./assets/images/header-bariloche.JPG" class ="img-fluid" alt="Bariloche">
+                    <img id="header-me-img" src="./assets/images/DAB.jpg" class ="float-end" alt="DAB">
+                </div>
+                <div class="alert alert-primary" role="alert">
+                    <p id="header-alert">{{ itemVsList[0].text }} </p>
+                    <div *ngIf="isUserLogged" class="data-control">
+                        <div class="btn-edit">
+                          <button class="btn btn-right" data-bs-toggle="modal" data-bs-target="#headerForm" (click)="onEditHeaderAlert()">
+                          <i class="fa fa-pen"></i></button>
+                        </div>
+                    </div>
+                </div>    
+                
+                <div>
+                    <h3><span id="header-name">{{ itemVsList[1].text }}</span></h3>
+                </div>
+                <div *ngIf="isUserLogged" class="data-control">
+                    <div class="btn-edit">
+                        <button class="btn btn-right" data-bs-toggle="modal" data-bs-target="#headerForm" (click)="onEditHeaderName()">
+                        <i class="fa fa-pen"></i></button>
+                    </div>
+                </div>
 
-    <div class="row">
-        <div class="col">
-            <div class="iconos-edicion">
-              <a href="#"><i class="fa-solid fa-pen-to-square" (click)="onEdit(idTitulo)"></i></a>
+                <div>
+                    <p><span id="header-description">{{ itemVsList[2].text }}</span></p>
+                </div>
+                <div *ngIf="isUserLogged" class="data-control">
+                    <div class="btn-edit">
+                        <button class="btn btn-right" data-bs-toggle="modal" data-bs-target="#headerForm" (click)="onEditHeaderDescription()">
+                        <i class="fa fa-pen"></i></button>
+                    </div>
+                </div>
+                
+                <div>
+                    <p><span id="header-location">{{ itemVsList[3].text }}</span></p>
+                </div>      
+                <div *ngIf="isUserLogged" class="data-control">
+                    <div class="btn-edit">
+                        <button class="btn btn-right" data-bs-toggle="modal" data-bs-target="#headerForm" (click)="onEditHeaderLocation()">
+                        <i class="fa fa-pen"></i></button>
+                    </div>
+                </div>
             </div>
-            <h1 [id]="idTitulo"> {{dataPortfolio[1].name}} </h1>
-            <div class="iconos-edicion">
-              <a href="#"><i class="fa-solid fa-pen-to-square" (click)="onEdit(textoDescripcion)"></i></a>
-            </div>
-            <p [id]="textoDescripcion">{{dataPortfolio[1].position}}</p>
-            <div class="iconos-edicion">
-                <a href="#"><i class="fa-solid fa-pen-to-square" (click)="onEdit(textoUbicacion)"></i></a>
-            </div>
-            <p [id]="textoUbicacion">{{dataPortfolio[1].location}}</p>
-        </div>
-    </div>
+        </div>  
+    </section>
+        
 </header>

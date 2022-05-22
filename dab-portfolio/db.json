@@ -26,41 +26,51 @@
 		"done": {
 		"idSection":"sec-hecho",
 		"title": "Hecho",
-		"text": "Texto",
-		"url": "url"
+		"items":[
+			{"titulo": "Portfolio personal",
+			"url": "url del portfolio"}]
 		}
 	},
 	{
 		"computerSkills": {
 		"idSection":"sec-conocimientos",
 		"title": "Conocimientos informáticos",
-		"text": "Texto"
+		"items": ["Html5", "Css3", "Javascript + Angular", "Java + Springboot", "Python"]
 		}
 	},
 	{
 		"workExperience": {
 		"idSection":"sec-experiencia",
 		"title": "Experiencia laboral",
-		"text": "Texto"
+		"items":[
+			{"institucion":"Instituto Nacional contra la Discriminación, la Xenofobia y el Racismo",
+			"area": "Área Web",
+			"duracion": "10 años"}]
 		}
 	},
 	{	
 		"education": {
 		"idSection":"sec-educacion",
 		"title": "Educación",
-		"text": "Texto"
+		"items":[
+			{"titulo": "Licenciatura en Matemáticas",
+			"institucion": "Universidad Nacional del Sur (UNS) - Bahía Blanca",
+			"completo": false},
+			{"titulo": "Bachiller con orientación en Ciencias Exactas",
+			"institucion": "Colegio Nacional N°1 - Bahía Blanca",
+			"completo": true}]
 		}
 	},
 	{
 		"otherSkills": {
 		"idSection":"sec-otras-habilidades",
 		"title": "Otras habilidades",
-		"text": "Texto"
+		"items":[
+			{"text": "Inglés intermedio",
+			"url": "url"},
+			{"text": "Fotógrafo aficionado",
+			"url": "url"}]
 		}
-	},
-	{
-		"idSection":"agregar-seccion",
-		"textBtnAddSection": "Agregar sección"
 	},
 	{	
 		"idSection":"texto-footer",

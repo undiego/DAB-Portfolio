@@ -8,12 +8,13 @@ body {
         padding: 0.5em;
     }
     
-    h1 {
+    h1, h2 {
         text-align: center;
     }
     
-    i {
-        margin: 0.2em;
+    button i {
+        color: blue;
+        
     }
     
     input {
@@ -22,6 +23,7 @@ body {
     
     button {
         margin:0.2em;
+        
     }
 
     .container {
@@ -29,7 +31,8 @@ body {
     }
     
     .iconos-edicion {
-        text-align: right;    
+        text-align: right;
+         
     }
 
     #texto-descripcion, #texto-ubicacion, #texto-footer {
@@ -40,7 +43,7 @@ body {
         margin-top: 0.75em;
     }
     
-    #ico-user {
+    #ico-user-chek{
         display:none;
     }
 
