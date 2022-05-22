@@ -144,7 +144,4 @@ export class DatosPortfolioService {
     return this.http.delete(config.baseUrl + "otrashabilidades/borrar/" + id);
   }
 
-  //Componente HeaderComponent
-
-
 }

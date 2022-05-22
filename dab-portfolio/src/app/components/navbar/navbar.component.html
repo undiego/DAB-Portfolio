@@ -1,8 +1,9 @@
 <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Diego Barrio</a>
+    <a class="navbar-brand" href="#"><img id=argentina-programa src="./assets/images/argentina-programa.jpg" class ="rounded img-fluid" alt="Logo Argentina Programa">Argentina Programa</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+    
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       
       <ul class="navbar-nav mr-auto">
@@ -12,12 +13,12 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link waves-effect waves-light">
+          <a class="nav-link waves-effect waves-light" href="#">
             <i class="grey-text fab fa-instagram fa-2x"></i>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link waves-effect waves-light">
+          <a class="nav-link waves-effect waves-light" href="#">
             <i class="grey-text fab fa-linkedin fa-2x"></i>
           </a>
         </li>
@@ -25,6 +26,8 @@
       <button *ngIf="!isUserLogged" class="btn btn-outline-info my-2 my-sm-0" routerLink="/login">Login</button>
       <button *ngIf="isUserLogged" class="btn btn-outline-info my-2 my-sm-0" routerLink="/logout" (click)="logout()">Logout</button>
     </div>
+  
+  
     
     <!--
     <div>

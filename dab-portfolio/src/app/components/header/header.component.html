@@ -1,4 +1,5 @@
 <header>
+    
     <section [id]="idSection" class="card mat-card">
         <!-- Modal -->
         <div class="modal fade" id="headerForm" tabindex="-1" aria-labelledby="headerFormLabel" aria-hidden="true">
@@ -29,17 +30,19 @@
           </div>
         </div>
         <!--Info componente-->
-        
-
         <div class="card-titles">
-                
+            
             <div class="data-container">
                 <!--
-                <div>
+                <div class="logo-image-container">
                     <img id="header-back-img" [src]="dataPortfolio[1].backImage" class ="img-fluid" alt="Bariloche">
                     <img id="header-me-img" [src]="dataPortfolio[1].photo" class ="float-end" alt="DAB">
                 </div>
                 -->
+                <div class="logo-image-container">
+                    <img id="header-back-img" src="./assets/images/header-bariloche.JPG" class ="img-fluid" alt="Bariloche">
+                    <img id="header-me-img" src="./assets/images/DAB.jpg" class ="float-end" alt="DAB">
+                </div>
                 <div class="alert alert-primary" role="alert">
                     <p id="header-alert">{{ itemVsList[0].text }} </p>
                     <div *ngIf="isUserLogged" class="data-control">
@@ -82,37 +85,5 @@
             </div>
         </div>  
     </section>
-    <!--
-    <img id="header-back-img" [src]="dataPortfolio[1].backImage" class ="img-fluid" alt="Bariloche">
-    
-    <img id="header-me-img" [src]="dataPortfolio[1].photo" class ="float-end" alt="DAB">
-    
-    <div class="row">
-        <div class="col">
-            <div class="alert alert-primary" role="alert">
-                <div class="iconos-edicion">  
-                    <a href="#"><i class="fa-solid fa-pen-to-square" (click)="onEdit(alertText)"></i></a>
-                </div>
-                <p [id]="alertText">{{dataPortfolio[1].alertText}}</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col">
-            <div class="iconos-edicion">
-              <a href="#"><i class="fa-solid fa-pen-to-square" (click)="onEdit(idTitulo)"></i></a>
-            </div>
-            <h1 [id]="idTitulo"> {{dataPortfolio[1].name}} </h1>
-            <div class="iconos-edicion">
-              <a href="#"><i class="fa-solid fa-pen-to-square" (click)="onEdit(textoDescripcion)"></i></a>
-            </div>
-            <p [id]="textoDescripcion">{{dataPortfolio[1].position}}</p>
-            <div class="iconos-edicion">
-                <a href="#"><i class="fa-solid fa-pen-to-square" (click)="onEdit(textoUbicacion)"></i></a>
-            </div>
-            <p [id]="textoUbicacion">{{dataPortfolio[1].location}}</p>
-        </div>
-    </div>
--->
+        
 </header>

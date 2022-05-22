@@ -13,11 +13,12 @@ import { DatosPortfolioService } from 'src/app/services/datos-portfolio.service'
 export class HeaderComponent implements OnInit {
   
   dataPortfolio:any;
+  /*
   text:string = "";
   alertText:string = "alert-text";
   idTitulo:string = "titulo-header";
   textoDescripcion:string = "texto-descripcion";
-  textoUbicacion:string = "texto-ubicacion";
+  textoUbicacion:string = "texto-ubicacion";*/
 
   idSection:string = "header";
 
