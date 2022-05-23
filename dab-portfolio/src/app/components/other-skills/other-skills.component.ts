@@ -15,6 +15,10 @@ export class OtherSkillsComponent implements OnInit {
   dataPortfolio:any;
   idSection:string="sec-otras-habilidades";
   //othSkList:any;
+  agrega:boolean = false;
+  agregado:any;
+  no_agregado:any;
+
 
   otrHabList: OtrasHabilidades[] = [];
   isUserLogged: Boolean = false;
@@ -92,6 +96,13 @@ export class OtherSkillsComponent implements OnInit {
       () => {this.reloadData();
       });
     }
+  }
+
+  agregaTexto(){
+    this.agrega = true;
+  }
+  sacaTexto(){
+    this.agrega = false;
   }
 
 

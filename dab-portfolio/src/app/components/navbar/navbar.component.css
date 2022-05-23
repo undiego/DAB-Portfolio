@@ -1,0 +1,10 @@
+#argentina-programa {
+    margin-right: 0.5em;
+  
+}
+
+@media (max-width: 600px) {
+    li {
+      margin-left: 1em;
+    }
+  }

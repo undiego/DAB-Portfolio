@@ -6,7 +6,7 @@
     
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       
-      <ul class="navbar-nav mr-auto">
+      <ul id="navbar" class="navbar-nav mr-auto">
         <li class="nav-item">
           <a class="nav-link waves-effect waves-light" href="#">
             <i class="grey-text fab fa-facebook-square fa-2x"></i>
@@ -27,13 +27,5 @@
       <button *ngIf="isUserLogged" class="btn btn-outline-info my-2 my-sm-0" routerLink="/logout" (click)="logout()">Logout</button>
     </div>
   
-  
-    
-    <!--
-    <div>
-      <img id=argentina-programa [src]="dataPortfolio[0].logoArgentinaPrograma" class ="rounded img-fluid" alt="Logo Argentina Programa">
-      <p id="texto-argentina-programa">{{dataPortfolio[0].textoArgentinaPrograma}}</p>
-    </div>
-    -->
-    
+      
   </nav>

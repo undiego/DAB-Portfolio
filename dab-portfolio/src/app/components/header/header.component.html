@@ -40,7 +40,7 @@
                 </div>
                 -->
                 <div class="logo-image-container">
-                    <img id="header-back-img" src="./assets/images/header-bariloche.JPG" class ="img-fluid" alt="Bariloche">
+                    <img id="header-back-img" src="./assets/images/fondo.jpg" class ="img-fluid" alt="Html">
                     <img id="header-me-img" src="./assets/images/DAB.jpg" class ="float-end" alt="DAB">
                 </div>
                 <div class="alert alert-dark" role="alert">
@@ -52,9 +52,9 @@
                         </div>
                     </div>
                 </div>    
-                
+                <div id="header-name">
                 <div>
-                    <h3><span id="header-name">{{ itemVsList[1].text }}</span></h3>
+                    <h3><span>{{ itemVsList[1].text }}</span></h3>
                 </div>
                 <div *ngIf="isUserLogged" class="data-control">
                     <div class="btn-edit">
@@ -78,10 +78,11 @@
                 </div>      
                 <div *ngIf="isUserLogged" class="data-control">
                     <div class="btn-edit">
-                        <button class="btn btn-right" data-bs-toggle="modal" data-bs-target="#headerForm" (click)="onEditHeaderLocation()">
+                        <button  class="btn btn-right" data-bs-toggle="modal" data-bs-target="#headerForm" (click)="onEditHeaderLocation()">
                         <i class="fa fa-pen"></i></button>
                     </div>
                 </div>
+              </div>
             </div>
         </div>  
     </section>

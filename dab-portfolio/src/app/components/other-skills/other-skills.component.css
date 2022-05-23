@@ -1,3 +1,12 @@
 li{
-   list-style: none;
+   display: inline;
+   float: left;
+   margin-right: 2em;
+}
+#agregar{
+   float: right;
+}
+
+#habilidades, #otrHab-url, #masinfo{
+   margin-left: 0.5em;
 }

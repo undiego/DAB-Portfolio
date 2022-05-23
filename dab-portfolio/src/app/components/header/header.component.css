@@ -13,3 +13,8 @@
       display: none;
     }
   }
+
+  #header-name {
+    text-align: center;
+  }
+

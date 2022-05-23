@@ -1,5 +1,9 @@
-#conInfList li {
+li {
     display: inline;
     float: left;
-    padding-right: 1em;
+    
+    padding-left: 1em;
 }
+#agregar{
+    float: right;
+ }
