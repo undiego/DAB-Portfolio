@@ -43,9 +43,9 @@
   </div>
   <!--Info componente-->
   <div class="card-titles">
-    <h2>Hecho</h2>
+    <h2>Trabajos</h2>
     <div *ngIf="isUserLogged" class="btn-edit">
-      <button class="btn btn-right" data-bs-toggle="modal" data-bs-target="#doneForm" (click)="onNewDone()"><i class="fa fa-plus"></i></button>
+      <button id="agregar" class="btn btn-right" data-bs-toggle="modal" data-bs-target="#doneForm" (click)="onNewDone()"><i class="fa fa-plus"></i></button>
     </div>
   </div>
   <div>
@@ -64,7 +64,7 @@
         </div>
         <div *ngIf="isUserLogged" class="data-control">
           <div class="btn-edit">
-            <button class="btn btn-right" data-bs-toggle="modal" data-bs-target="#conInfForm" (click)="onEditItem(i)">
+            <button class="btn btn-right" data-bs-toggle="modal" data-bs-target="#doneForm" (click)="onEditItem(i)">
               <i class="fa fa-pen"></i></button>
             <button class="btn btn-right" (click)="onDeleteItem(i)"><i class="fa fa-trash"></i></button>
           </div>

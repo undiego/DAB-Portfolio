@@ -35,7 +35,7 @@ export class DatosPortfolioService {
   }
 
   addItem(educ:any): Observable<any>{
-    console.log("Add desde el servicio " + educ);
+    //console.log("Add desde el servicio " + educ);
     return this.http.post<any>(config.baseUrl + "educacion/crear", educ);
   }
 
@@ -65,17 +65,18 @@ export class DatosPortfolioService {
     return this.http.get<any>(config.baseUrl + "items/mostrar");
   }
 
-  addItemDone(conInf:any): Observable<any>{
-    return this.http.post<any>(config.baseUrl + "items/crear", conInf);
+  addItemDone(done:any): Observable<any>{
+    return this.http.post<any>(config.baseUrl + "items/crear", done);
   }
 
-  editItemDone(conInf:any): Observable<any>{
-    return this.http.put<any>(config.baseUrl + "items/editar/" + conInf.id, conInf);
+  editItemDone(done:any): Observable<any>{
+    return this.http.put<any>(config.baseUrl + "items/editar/" + done.id, done);
   }
 
   deleteItemDone(id:number): Observable<any>{
     return this.http.delete(config.baseUrl + "items/borrar/" + id);
   }
+
   // Componente Conocimientos informáticos
   getDatosConInf():Observable<any>{
     return this.http.get<any>(config.baseUrl + "conocimientosinformaticos/mostrar");

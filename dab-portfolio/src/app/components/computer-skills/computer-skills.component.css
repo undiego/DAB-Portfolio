@@ -1,0 +1,9 @@
+li {
+    display: inline;
+    float: left;
+    
+    padding-left: 1em;
+}
+#agregar{
+    float: right;
+ }

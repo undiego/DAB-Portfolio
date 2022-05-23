@@ -19,7 +19,7 @@
             </div>
 
             <div class="row mb-3">
-              <label for="url" class="col-sm-2 col-form-label">URL</label>
+              <label for="url" class="col-sm-2 col-form-label">Agregado</label>
               <div class="col-sm-10">
                 <input type="text" name="url" formControlName="url" class="form-control" required>
               </div>
@@ -38,17 +38,19 @@
   <div class="card-titles">
     <h2>Otras habilidades</h2>
     <div *ngIf="isUserLogged" class="btn-edit">
-      <button class="btn btn-right" data-bs-toggle="modal" data-bs-target="#otrasHabForm" (click)="onNewOtrasHab()"><i class="fa fa-plus"></i></button>
+      <button id="agregar" class="btn btn-right" data-bs-toggle="modal" data-bs-target="#otrasHabForm" (click)="onNewOtrasHab()"><i class="fa fa-plus"></i></button>
     </div>
   </div>
-  <div>
+  <div (mouseover)="agregaTexto()" (mouseleave)="sacaTexto()">
     <ul class="items-list" id="otrHabList">
       <li *ngFor="let otrHab of otrHabList; let i = index">
         <div class="data-container">
             <div>
               <h3 id="otrHab-text">{{ otrHab.text }} </h3>
-                <p>
-                  <span id="otrHab-url">{{ otrHab.url }}</span> 
+                <p id="habilidades">
+                  <span *ngIf="agrega; then agregado else no_agregado"></span>
+                  <ng-template #agregado><i class="fa-solid fa-check"></i><span id="otrHab-url">{{ otrHab.url }}</span></ng-template>
+                  <ng-template #no_agregado><i class="fa-solid fa-code"></i><span id="masinfo">Más info</span></ng-template>
                 </p>
             </div>
         </div>
@@ -62,5 +64,5 @@
       </li>
     </ul>
   </div>
-
+  
 </section>
