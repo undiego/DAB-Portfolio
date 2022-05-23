@@ -1,0 +1,5 @@
+#conInfList li {
+    display: inline;
+    float: left;
+    padding-right: 1em;
+}

@@ -4,9 +4,12 @@
 
 #header-me-img {
     position:relative;
-    margin-top: -8.5em;
+    margin-top: -7.9em;
     z-index: 1;
-    
-    
 }
 
+@media (max-width: 600px) {
+    #header-me-img, #header-back-img {
+      display: none;
+    }
+  }

@@ -35,7 +35,7 @@ export class DatosPortfolioService {
   }
 
   addItem(educ:any): Observable<any>{
-    console.log("Add desde el servicio " + educ);
+    //console.log("Add desde el servicio " + educ);
     return this.http.post<any>(config.baseUrl + "educacion/crear", educ);
   }
 
