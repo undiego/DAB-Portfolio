@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHandler } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { Educacion } from '../../assets/extras/Educacion';
+//import { Educacion } from '../../assets/extras/Educacion';
 import { config } from '../../assets/extras/config';
 
 @Injectable({
