@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHandler } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { Educacion } from '../../assets/extras/Educacion';
+//import { Educacion } from '../../assets/extras/Educacion';
 import { config } from '../../assets/extras/config';
 
 @Injectable({
@@ -15,7 +15,7 @@ export class DatosPortfolioService {
   constructor(private http:HttpClient) { }
 
   // METODOS GENERICOS A ELIMINAR
-
+  /*
   getDatos():Observable<any>{
     //console.log("El servicio datos-portfolio está funcionando");
     //return this.http.get('json');
@@ -37,10 +37,10 @@ export class DatosPortfolioService {
   addItem(educ:any): Observable<any>{
     //console.log("Add desde el servicio " + educ);
     return this.http.post<any>(config.baseUrl + "educacion/crear", educ);
-  }
+  }*/
 
   /*Se agrega función para que funcione databinding de los componentes*/
-  
+  /*
   deleteSection(idSection:string): Observable<any>{
     console.log("delete desde servicio " + idSection);
     confirm("¿Desea borrar esta sección?");
@@ -49,7 +49,7 @@ export class DatosPortfolioService {
   editSection(idSection:string): Observable<any>{
     console.log("Edit desde el servicio " + idSection);
     return this.http.patch(idSection, "");
-  }
+  }*/
 
   //Componente Acerca de, Footer y Header
   getDatosVs():Observable<any>{
